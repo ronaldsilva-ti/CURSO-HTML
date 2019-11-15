@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Formulários (Form, Formaction, Formmethod, Formenctype, Formnovalidate)</title>
+</head>
+<body>
+	<form id="form-cadastro"  method="POST">
+		Email:<br>
+		<input type="email" name="email">
+	<input type="button" name="cadastrar" formmethod="GET" value="Cadastrar" formaction="cadastro.php">
+	<input type="button" name="enviar" formtarget="_blank" formmethod="POST" formenctype="" value="Enviar" formaction="enviar-por-email.php" formnovalidate>
+	</form><br>
+
+	Nome:<br>
+	<input type="text" form="form-cadastro" name="nome">
+
+</body>
+</html>

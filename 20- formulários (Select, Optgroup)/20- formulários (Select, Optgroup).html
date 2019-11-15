@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Formulários (Select, Optgroup)</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Formulários (Select,Optgroup)</legend>
+
+		<form action="cadastro.php" method="POST">
+			Escolha seu veiculo:<br><br>
+			<select name="veiculo">
+				<optgroup label="Carros">
+					<option value="camaro">Camaro</option>
+					<option value="hilux">Hilux</option>
+				</optgroup>
+
+				<optgroup label="Motos">
+					<option value="pop100">POP100</option>
+					<option value="zig50">Zig50</option><br><br>
+				</optgroup>
+				<br><br>	
+			</select><br><br>
+
+			Escolha um curso:<br>
+			<input name="curso" list="lista-curso">
+			<datalist id="lista-curso">
+				<option value="HTML5">
+				<option value="CSS3">
+				<option value="PHP">
+			</datalist>
+		</form>
+	</fieldset>
+
+</body>
+</html>

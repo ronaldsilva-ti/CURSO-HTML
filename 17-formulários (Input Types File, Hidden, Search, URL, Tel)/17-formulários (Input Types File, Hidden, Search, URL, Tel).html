@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulários (Input Types: File, Hidden, Search, URL, Tel)</title>
+</head>
+<body>
+<fieldset>
+	<legend>Informações Pessoais</legend>
+	<form action="cadastro.php" method="POST">
+		Nome:<br>
+		<input type="text" name="nome" required autofocus><br>
+		Senha:<br>
+		<input type="password" name="senha" maxlength="5"><br>
+		Email:<br>
+		<input type="email" name="email" required autocomplete="on" placeholder="seuemail@gmail.com"><br><br>
+		<input type="file" name="imagem"><br><br>
+
+		<input type="hidden" name="id"><br><br>
+		URL:<br>
+		<input type="url" name="site"><br><br>
+		Search:<br>
+		<input type="search" name="pesquisa"><br><br>
+		Telefone:<br>
+		<input type="tel" name="telefone"><br><br>
+
+		Time:<br>
+		<input type="radio" name="time" value="vasco" checked>Vasco<br>
+		<input type="radio" name="time"  value="botafogo">Botafogo<br>
+		<input type="radio"  name="time" value="fluminense">Fluminense<br>
+		<input type="radio"  name="time" value="flamengo">Flamengo<br>
+		Cores:<br>
+		<input type="checkbox" name="cores" value="verde" >Verde<br>
+		<input type="checkbox" name="cores" value="azul" checked>Azul<br>
+		<input type="checkbox" name="cores" value="preto">Preto<br><br>
+		Quantidade<br>
+		<input type="number" name="quantidade" step="10" min="0" max="500"><br><br>
+		<input type="range" name="quanidade"><br><br>
+		Cores:
+		<input type="color" name="cor">
+
+		<input type="submit" value="Enviar">
+
+	</form>
+</fieldset>
+
+</body>
+</html>
